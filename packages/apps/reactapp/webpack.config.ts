@@ -9,6 +9,9 @@ const config = {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
   },
+  cache : {
+    type: 'filesystem',
+  },
   module: {
     rules: [
       {
@@ -27,9 +30,6 @@ const config = {
   resolve: {
     extensions: [".tsx", ".ts", ".js"],
   },
-  caches : {
-    type: 'filesystem',
-  }
 };
 
 module.exports = smp.wrap(config);
