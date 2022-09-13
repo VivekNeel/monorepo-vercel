@@ -26,6 +26,9 @@ const config = {
   ],
   resolve: {
     extensions: [".tsx", ".ts", ".js"],
+  },
+  caches : {
+    type: 'filesystem',
   }
 };
 
