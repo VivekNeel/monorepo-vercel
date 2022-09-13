@@ -1,0 +1,17 @@
+{
+  "name": "monorepo-vercel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start-reactapp": "yarn --cwd packages/apps/reactapp start",
+    "build-reactapp" : "yarn --cwd packages/apps/reactapp build"
+  },
+  "workspaces": [
+    "packages/*/*"
+  ],
+  "devDependencies": {
+    "ts-node": "^10.9.1"
+  }
+}
